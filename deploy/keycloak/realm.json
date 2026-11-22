@@ -1,0 +1,32 @@
+{
+  "realm": "meridian",
+  "enabled": true,
+  "displayName": "Meridian local identity broker",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "clients": [
+    {
+      "clientId": "meridian-web",
+      "name": "Meridian Web",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "local-dev-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": ["http://localhost:3000/api/auth/callback/enterprise-sso"],
+      "webOrigins": ["http://localhost:3000"],
+      "protocol": "openid-connect",
+      "defaultClientScopes": ["web-origins", "acr", "roles", "profile", "email", "groups"]
+    }
+  ],
+  "groups": [
+    { "name": "meridian-owners" },
+    { "name": "meridian-admins" },
+    { "name": "service-managers" },
+    { "name": "service-desk-agents" },
+    { "name": "change-managers" },
+    { "name": "business-approvers" },
+    { "name": "employees" },
+    { "name": "internal-audit" }
+  ]
+}

@@ -1,0 +1,5 @@
+export const knowledgeArticles = [
+  {id:"impact",title:"CMDB impact analysis",summary:"Meridian traverses typed CI relationships to a configurable six-hop boundary and returns a truncation signal when more data exists.",content:"Change and incident views show affected CIs and business services with relationship paths. The copilot may explain the graph but cannot approve a change.",tags:["cmdb","impact","ci","service"]},
+  {id:"sla",title:"SLA clock policy",summary:"SLA clocks follow business calendars, pause conditions, response and resolution targets, and breach escalation rules.",content:"Every pause and resume includes a reason and actor. Recalculation is deterministic and audit history remains immutable.",tags:["sla","breach","calendar","incident"]},
+  {id:"similar",title:"Similar incident retrieval",summary:"Candidate incidents are ranked from approved text, affected services, CIs, symptoms, and resolution codes.",content:"Similarity is evidence for an agent, not an automatic closure decision. Suggested workarounds must come from an approved knowledge article or prior resolved incident.",tags:["incident","similar","knowledge","workaround"]},
+];
